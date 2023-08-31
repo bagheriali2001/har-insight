@@ -23,7 +23,7 @@ const timelineData = ref([
                 done: false
             },
         ],
-        done: false
+        done: true
     },
     { 
         title: 'Phase 2 (Unique Features 🤩)',

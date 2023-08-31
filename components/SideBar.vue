@@ -1,5 +1,5 @@
 <template>
-    <div class="drawer fixed">
+    <div class="drawer fixed z-10">
         <input id="my-drawer" type="checkbox" class="drawer-toggle" />
         <div class="drawer-content">
             <label for="my-drawer" class="drawer-button fixed top-0 left-0 m-4 z-50 w-0 h-0">

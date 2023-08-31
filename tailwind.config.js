@@ -2,25 +2,25 @@ module.exports = {
 	plugins: [require('daisyui')],
 	daisyui: {
 		themes: [
-			{ 
-				custom: { 
+			{
+				custom: {
 					"primary": "#3abff8",
-									
+
 					"secondary": "#828df8",
-									
+
 					"accent": "#f471b5",
-									
+
 					"neutral": "#1d283a",
-									
+
 					"base-100": "#0f1729",
 					// "base-100": "#0177B6",
-									
+
 					"info": "#0ca6e9",
-									
+
 					"success": "#2bd4bd",
-									
+
 					"warning": "#f4c152",
-									
+
 					"error": "#fb6f84",
 
 					"--rounded-box": "1rem", // border radius rounded-box utility class, used in card and other large boxes
@@ -37,4 +37,11 @@ module.exports = {
 			}
 		],
 	},
+	theme: {
+		extend: {
+			boxShadow: {
+				'zero': '0 0 6px 6px rgb(74, 222, 128)',
+			}
+		}
+	}
 };
