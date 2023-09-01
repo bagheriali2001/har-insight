@@ -11,8 +11,6 @@ export default defineNuxtConfig({
   },
   css: [
     '@fortawesome/fontawesome-svg-core/styles.css',
-    // '@coreui/coreui/dist/css/coreui.min.css',
-    // 'bootstrap/dist/css/bootstrap.min.css',
   ],
   plugins: [
   ]

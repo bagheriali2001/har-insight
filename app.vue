@@ -18,7 +18,7 @@
         <div class="drawer-side">
           <label for="my-drawer" class="drawer-overlay"></label>
           <ul
-            class="menu p-4 w-80 min-h-full bg-base-200 text-base-content z-20"
+            class="menu p-4 w-52 min-h-full bg-base-100 text-base-content z-20"
           >
             <NuxtLink
               v-for="link in pageLinks"
@@ -42,7 +42,7 @@ const pageLinks = ref([
   { name: "Home", link: "/" },
   { name: "App", link: "/app" },
   { name: "Roadmap", link: "/roadmap" },
-  { name: "Documentation", link: "/docs" },
+  // { name: "Documentation", link: "/docs" },
 ]);
 </script>
 

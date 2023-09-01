@@ -14,7 +14,6 @@ const updateConfig = (key, value) => {
 	<Transition name="modal">
 		<div v-if="show" class="modal-mask">
 			<div class="modal-container flex flex-col items-center justify-between bg-base-300 rounded-lg w-5/12 h-80 relative m-auto px-8 py-5">
-				<!-- add a close button at the top right of the modal -->
 				<button class="absolute top-0 right-0 m-4 card shadow-xl" @click="$emit('close')">
 					<svg
 						class="w-6 h-6 text-gray-500 hover:text-gray-700"
@@ -80,7 +79,6 @@ const updateConfig = (key, value) => {
 						</div>
 					</div>
 				</div>
-				
 
 				<div class="m-8">
 						<button
@@ -107,11 +105,6 @@ const updateConfig = (key, value) => {
 }
 
 .modal-container {
-	/* width: 300px; */
-	/* margin: auto;
-	padding: 20px 30px; */
-	/* background-color: #fff; */
-	/* border-radius: 2px; */
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
 	transition: all 0.3s ease;
 }

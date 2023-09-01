@@ -1,12 +1,10 @@
 <template>
-    <div class="gradient-background w-screen h-screen">
-        <div class="flex flex-col items-center justify-center">
-            <h1 class="text-5xl font-bold text-white mt-20">Roadmap</h1>
+    <div class="w-screen h-screen gradient-background flex flex-col items-center justify-center">
+            <h1 class="text-8xl font-bold text-white mt-32 mb-24">Roadmap</h1>
 
-            <div class="w-[85%] h-[700px]">
+            <div class="w-[80%] h-[700px]">
                 <TimelineComponant :items="timelineData" :elemWidth="350"/>
             </div>
-        </div>
     </div>
 </template>
 
@@ -20,7 +18,7 @@ const timelineData = ref([
         jobs: [
             {
                 info: "Visualizing the HAR file",
-                done: false
+                done: true
             },
         ],
         done: true
@@ -30,15 +28,15 @@ const timelineData = ref([
         time: 'Est 2023/10',
         jobs: [
             {
-                info: "Search Functionality",
+                info: "Adding better content viewing option",
+                done: false
+            },
+            {
+                info: "Search functionality",
                 done: false
             },
             {
                 info: "Documentation for Search Syntax",
-                done: false
-            },
-            {
-                info: "Adding Some configuration options (Columns in request table, Sort options, Request type filtering, etc...)",
                 done: false
             },
             {
@@ -53,11 +51,7 @@ const timelineData = ref([
         time: 'Est 2023/11',
         jobs: [
             {
-                info: "More configuration options",
-                done: false
-            },
-            {
-                info: "Timeline view",
+                info: "Adding configuration options (Columns in request table, Sort options, Request type filtering, etc...)",
                 done: false
             },
             {
@@ -76,15 +70,15 @@ const timelineData = ref([
         time: 'Est 2023/12',
         jobs: [
             {
-                info: "Implementing Back-end for the project",
+                info: "Implementing back-end for the project",
                 done: false
             },
             {
-                info: "Ability to store you view configuration on the web",
+                info: "Ability to store you view configuration on the Back-end",
                 done: false
             },
             {
-                info: "Implementing Uploading and sharing of you HAR files",
+                info: "Implementing uploading and sharing of you HAR files",
                 done: false
             },
         ],
@@ -95,11 +89,15 @@ const timelineData = ref([
         time: 'Est 2024/01',
         jobs: [
             {
-                info: "Adding better content viewing option",
+                info: "Reworking the Landing page",
                 done: false
             },
             {
-                info: "Reworking the Landing page",
+                info: "Reworking and improving design of the project",
+                done: false
+            },
+            {
+                info: "Timeline view",
                 done: false
             },
         ],

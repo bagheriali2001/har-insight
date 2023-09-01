@@ -14,9 +14,9 @@
             </template>
         </LoadFileModal>
     </Teleport>
-    <Teleport to="body">
+    <!-- <Teleport to="body">
         <ConfigModalComponent :show="showConfigModal" @close="showConfigModal = false"></ConfigModalComponent>
-    </Teleport>
+    </Teleport> -->
 
     <div class="flex flex-col h-screen" v-if="!file_loaded">
         <div class="flex flex-col justify-center items-center h-full">
@@ -24,7 +24,7 @@
                 <HeaderComponent />
             </div>
             <div class="flex flex-col w-3/4 my-6">
-                <button class="relative bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-[30%] mx-auto" @click="showModal = true">
+                <button class="relative btn btn-outline btn-info text-white font-bold py-2 px-4 rounded-lg w-[30%] mx-auto" @click="showModal = true">
                     Open HAR File
                 </button>
             </div>
@@ -33,21 +33,17 @@
 
 
     <div class="flex flex-col h-screen overflow-y-hidden w-full" v-else>
-        <div class="flex flex-col justify-center items-center h-full w-full overflow-y-hidden overflow-x-hidden">
-            <GeneralInformationComponent :version="file.log.version" :creator="file.log.creator" :browser="file.log.browser" :comment="file.log.comment" class="top-0 mx-4 my-[1%] h-[6%]">
+        <div class="flex flex-col justify-center items-center h-full w-full overflow-y-hidden overflow-x-hidden mt-0">
+            <GeneralInformationComponent :version="file.log.version" :creator="file.log.creator" :browser="file.log.browser" :comment="file.log.comment" class="top-0 mx-4 my-[1%] h-[3%]">
                 <template #new_file_load>
-                    <div class="flex w-full justify-center items-center">
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded w-[85%]" @click="showModal = true">
-                            Load new HAR File
-                        </button>
-                    </div>
+                    <button class="btn btn-outline btn-info text-white font-bold py-2 px-2 rounded w-11/12" @click="showModal = true">
+                        Load new HAR File
+                    </button>
                 </template>
                 <template #config_button>
-                    <div class="flex w-full justify-center items-center">
-                        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded w-[85%]" @click="showConfigModal = true">
-                            Show Configurations
-                        </button>
-                    </div>
+                    <!-- <button class="btn btn-outline btn-info text-white font-bold py-2 px-2 rounded w-11/12" @click="showConfigModal = true">
+                        Show Configurations
+                    </button> -->
                 </template>
             </GeneralInformationComponent>
             <!-- <div class="divider"></div> -->
@@ -60,7 +56,7 @@
                     <RequestListComponent :requests="display_entries" class="h-full" @updateChosenRequest="selected_request = $event"/>
                 </div>
                 <!-- <div class="divider divider-vertical h-full w-[1px] bg-sky-500 mb-4 mt-0" v-if="selected_request"></div> -->
-                <div class="flex flex-col min-w-[1800px] w-[1800px] h-full me-4" v-if="selected_request">
+                <div class="flex flex-col min-w-[1200px] w-[1200px] h-full me-4" v-if="selected_request">
                     <RequestDetailCard :request="selected_request" :key="selected_request.connection+selected_request.url+selected_request.startedDateTime" class="h-full"/>
                 </div>
             </div>
@@ -72,7 +68,7 @@
 import HeaderComponent from '../components/app/HeaderComponent.vue';
 import LoadFileModal from '../components/app/LoadFileModal.vue';
 import GeneralInformationComponent from '../components/app/information/GeneralInformationComponent.vue';
-import ConfigModalComponent from '../components/app/information/ConfigModalComponent.vue';
+// import ConfigModalComponent from '../components/app/information/ConfigModalComponent.vue';
 import PageListComponent from '../components/app/information/pageList/PageListComponent.vue';
 import RequestListComponent from '../components/app/information/requestList/RequestListComponent.vue';
 import RequestDetailCard from '../components/app/information/RequestDetailCard.vue';
@@ -115,8 +111,6 @@ watch(selected_page, (newVal, oldVal) => {
 
 
 // ONLY IN DEVELOPMENT
-// load a default file from project_root/test_data/localhost.har
-// import localhost from '../test_data/app.landin.ir.json';
 // import localhost from '../test_data/localhost.json';
 // file.value = localhost;
 // file_loaded.value = true;

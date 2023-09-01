@@ -4,7 +4,7 @@
         <GeneralTabSection :data="generalTabInfo.firstSectionInfo" v-if="current_tab === 'general'"/>
         <RequestTabSection :data="request.request" v-if="current_tab === 'request'"/>
         <ResponseTabSection :data="request.response" v-if="current_tab === 'response'"/>
-        <TimingTabComponent :data="request.timings" v-if="current_tab === 'timing'"/>
+        <!-- <TimingTabComponent :data="request.timings" v-if="current_tab === 'timing'"/> -->
 
 	</div>
 </template>
@@ -14,7 +14,7 @@ import NavigationTabComponent from './requestDetail/NavigationTabComponent.vue';
 import GeneralTabSection from './requestDetail/general/GeneralTabSection.vue';
 import RequestTabSection from './requestDetail/request/RequestTabSection.vue';
 import ResponseTabSection from './requestDetail/response/ResponseTabSection.vue';
-import TimingTabComponent from './requestDetail/timing/TimingTabComponent.vue';
+// import TimingTabComponent from './requestDetail/timing/TimingTabComponent.vue';
 
 const props = defineProps({
   request: Object,
@@ -37,16 +37,16 @@ const tabs = ref([
         name: 'Response',
         svgPath: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'
     },
-    {
-        id: 'timing',
-        name: 'Timing',
-        svgPath: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'
-    },
-    {
-        id: 'extra',
-        name: 'Extra',
-        svgPath: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'
-    },
+    // {
+    //     id: 'timing',
+    //     name: 'Timing',
+    //     svgPath: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'
+    // },
+    // {
+    //     id: 'extra',
+    //     name: 'Extra',
+    //     svgPath: 'M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'
+    // },
 ]);
 
 console.log(props.request);

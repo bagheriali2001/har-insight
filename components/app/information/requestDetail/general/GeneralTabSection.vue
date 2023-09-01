@@ -5,7 +5,7 @@
 </template>
 
 <script setup>
-import GeneralFirstSection from './GeneralInfotSection.vue'
+import GeneralFirstSection from './GeneralInfoSection.vue'
 
 const props = defineProps({
     data: Object,

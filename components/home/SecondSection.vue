@@ -84,9 +84,9 @@ const infos = [
 ];
 
 const images = [
-	"../images/insight-2.jpg",
-	"../images/visualize-2.jpg",
-	"../images/analyze-2.jpg",
+	"../images/insight.jpg",
+	"../images/visualize.jpg",
+	"../images/analyze.jpg",
 ]
 
 const header_title = `Unleash the Power of HAR Files`;

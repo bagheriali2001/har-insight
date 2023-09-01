@@ -1,7 +1,5 @@
 <template>
-    <!-- <div class="flex justify-center w-[80%]"> -->
-        <img class="w-[50%] my-2 mx-0" :src="image_url" />
-    <!-- </div> -->
+    <img class="w-[50%] my-2 mx-0" :src="image_url" />
 </template>
 
 <script setup>

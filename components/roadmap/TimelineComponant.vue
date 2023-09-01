@@ -2,17 +2,6 @@
     <div class="relative w-full h-full overflow-x-auto justify-center items-center z-0">
             <div class="line pl-5 border-t-2 border-solid border-green-600 mt-2" :style="[{'width': `${items.filter(item => item.done).length * elemWidth}px`}]"></div>
             <div class="line pr-5 border-t-2 border-solid border-gray-300 mt-2" :style="[{'width': `${items.filter(item => !item.done).length * elemWidth}px`}, {'left': `${items.filter(item => item.done).length * elemWidth}px`}]"></div>
-            
-            <div class="flex flex-row justify-center top-[85px] absolute w-100 h-100" :style="[{ left: `${elemWidth/2}px`}]">
-                <div
-                v-for="(item, index) in items"
-                :key="index"
-                class="circles-inner flex flex-col justify-center items-center"
-                :style="[{ left: `${index * elemWidth}px`}, { width: `${elemWidth}px` }]"
-                >
-                    <!-- <div class="relative rounded-[50%] w-[30px] h-[30px] mx-auto item-center" :style="[{ 'background-color': item.done ? 'green' : 'gray' }]"></div> -->
-                </div>
-            </div>
 
             <div class="flex flex-row justify-center top-[35px] absolute w-100 h-100" :style="[{ left: `${elemWidth/2}px`}]">
                 <div
