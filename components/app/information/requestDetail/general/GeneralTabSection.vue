@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-y-auto h-full w-full">
+    <div class="overflow-y-auto overflow-x-hidden h-full w-full">
         <GeneralFirstSection :data="data" />
     </div>
 </template>

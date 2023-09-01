@@ -1,5 +1,5 @@
 <template>
-    <div class="overflow-y-auto h-full w-full">
+    <div class="overflow-y-auto overflow-x-hidden h-full w-full">
         <ResponseGeneralSection :data="firstSectionData" />
         <ResponseHeaderSection :data="data.headers" v-if="data.headers && data.headers.length > 0" />
         <CookieAccordionComponent :data="data.cookies" v-if="data.cookies && data.cookies.length > 0" />

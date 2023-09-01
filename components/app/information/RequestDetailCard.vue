@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-start items-center bg-neutral rounded-md h-full w-full m-4 card shadow-xl">
+    <div class="flex flex-col justify-start items-center bg-neutral rounded-md h-full w-full m-4 card shadow-xl overflow-x-hidden">
         <NavigationTabComponent :current_tab="current_tab" :tabs="tabs" class="w-full" @updateCurrentTab="current_tab = $event"/>
         <GeneralTabSection :data="generalTabInfo.firstSectionInfo" v-if="current_tab === 'general'"/>
         <RequestTabSection :data="request.request" v-if="current_tab === 'request'"/>

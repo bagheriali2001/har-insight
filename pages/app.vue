@@ -24,7 +24,7 @@
                 <HeaderComponent />
             </div>
             <div class="flex flex-col w-3/4 my-6">
-                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-[30%] mx-auto" @click="showModal = true">
+                <button class="relative bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-[30%] mx-auto" @click="showModal = true">
                     Open HAR File
                 </button>
             </div>
@@ -33,7 +33,7 @@
 
 
     <div class="flex flex-col h-screen overflow-y-hidden w-full" v-else>
-        <div class="flex flex-col justify-center items-center h-full w-full">
+        <div class="flex flex-col justify-center items-center h-full w-full overflow-y-hidden overflow-x-hidden">
             <GeneralInformationComponent :version="file.log.version" :creator="file.log.creator" :browser="file.log.browser" :comment="file.log.comment" class="top-0 mx-4 my-[1%] h-[6%]">
                 <template #new_file_load>
                     <div class="flex w-full justify-center items-center">
@@ -51,7 +51,7 @@
                 </template>
             </GeneralInformationComponent>
             <!-- <div class="divider"></div> -->
-            <div class="flex flex-row w-full h-[92%] mb-4 overflow-x-scroll pr-4">
+            <div class="flex flex-row w-full h-[92%] mb-4 overflow-x-scroll overflow-y-hidden pr-4">
                 <div class="flex flex-col min-w-[300px] w-[300px] h-full mb-4">
                     <PageListComponent :pages="file.log.pages" class="h-full" @updateChosenPage="selected_page = $event"/>
                 </div>

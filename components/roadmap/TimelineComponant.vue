@@ -36,7 +36,7 @@
   
 <script setup>
 import { defineProps } from 'vue';
-import tickIcon from '../../public/icons/Tick-24.svg';
+import tickIcon from '../../src/icons/Tick-24.svg';
 
 const { items, elemWidth } = defineProps(['items', 'elemWidth']);
 </script>
