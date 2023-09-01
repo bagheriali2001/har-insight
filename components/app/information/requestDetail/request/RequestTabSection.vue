@@ -1,11 +1,23 @@
 <template>
-    <div class="overflow-y-auto overflow-x-hidden h-full w-full">
-        <RequestInfoSection :data="firstSectionData" />
-        <RequestHeaderSection :data="data.headers" v-if = "data.headers && data.headers.length > 0" />
-        <CookieAccordionComponent :data="data.cookies" v-if="data.cookies && data.cookies.length > 0" />
-        <PostDataAccordionComponent :data="data.postData" v-if="data.postData" />
-        <RequestQuerySection :data="data.queryString" v-if="data.queryString && data.queryString != ''" />
-    </div>
+	<div class="overflow-y-auto overflow-x-hidden h-full w-full">
+		<RequestInfoSection :data="firstSectionData" />
+		<RequestHeaderSection
+			v-if="data.headers && data.headers.length > 0"
+			:data="data.headers"
+		/>
+		<CookieAccordionComponent
+			v-if="data.cookies && data.cookies.length > 0"
+			:data="data.cookies"
+		/>
+		<PostDataAccordionComponent
+			v-if="data.postData"
+			:data="data.postData"
+		/>
+		<RequestQuerySection
+			v-if="data.queryString && data.queryString != ''"
+			:data="data.queryString"
+		/>
+	</div>
 </template>
 
 <script setup>
@@ -16,15 +28,15 @@ import PostDataAccordionComponent from '../dataDisplay/PostDataAccordionComponen
 import RequestQuerySection from './RequestQuerySection.vue';
 
 const props = defineProps({
-    data: Object,
+	data: Object,
 });
 
 const firstSectionData = ref({
-    method: props.data.method,
-    url: props.data.url,
-    httpVersion: props.data.httpVersion,
-    headersSize: props.data.headersSize,
-    bodySize: props.data.bodySize,
-    comment: props.data.comment,
+	method: props.data.method,
+	url: props.data.url,
+	httpVersion: props.data.httpVersion,
+	headersSize: props.data.headersSize,
+	bodySize: props.data.bodySize,
+	comment: props.data.comment,
 })
 </script>

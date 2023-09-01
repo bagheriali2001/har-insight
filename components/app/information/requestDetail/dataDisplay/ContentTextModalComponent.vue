@@ -1,15 +1,21 @@
 <script setup>
 const props = defineProps({
 	show: Boolean,
-    text: String,
+	text: String,
 });
 </script>
 
 <template>
 	<Transition name="modal">
-		<div v-if="show" class="modal-mask">
+		<div
+			v-if="show"
+			class="modal-mask"
+		>
 			<div class="modal-container flex flex-col items-center justify-start bg-base-300 rounded-lg w-11/12 h-5/6 relative m-auto px-8 py-5 p-4">
-				<button class="absolute top-0 right-0 m-4 card shadow-xl" @click="$emit('close')">
+				<button
+					class="absolute top-0 right-0 m-4 card shadow-xl"
+					@click="$emit('close')"
+				>
 					<svg
 						class="w-6 h-6 text-gray-500 hover:text-gray-700"
 						fill="none"
@@ -22,11 +28,13 @@ const props = defineProps({
 							stroke-linejoin="round"
 							stroke-width="2"
 							d="M6 18L18 6M6 6l12 12"
-						></path>
+						/>
 					</svg>
 				</button>
 				<div class="m-4">
-					<h3 class="text-2xl font-bold">Content Text</h3>
+					<h3 class="text-2xl font-bold">
+						Content Text
+					</h3>
 				</div>
 
 				<div class="overflow-x-auto mt-4 mb-4 w-[90%]">

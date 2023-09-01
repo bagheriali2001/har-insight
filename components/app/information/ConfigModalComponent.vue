@@ -12,9 +12,15 @@ const updateConfig = (key, value) => {
 
 <template>
 	<Transition name="modal">
-		<div v-if="show" class="modal-mask">
+		<div
+			v-if="show"
+			class="modal-mask"
+		>
 			<div class="modal-container flex flex-col items-center justify-between bg-base-300 rounded-lg w-5/12 h-80 relative m-auto px-8 py-5">
-				<button class="absolute top-0 right-0 m-4 card shadow-xl" @click="$emit('close')">
+				<button
+					class="absolute top-0 right-0 m-4 card shadow-xl"
+					@click="$emit('close')"
+				>
 					<svg
 						class="w-6 h-6 text-gray-500 hover:text-gray-700"
 						fill="none"
@@ -27,11 +33,11 @@ const updateConfig = (key, value) => {
 							stroke-linejoin="round"
 							stroke-width="2"
 							d="M6 18L18 6M6 6l12 12"
-						></path>
+						/>
 					</svg>
 				</button>
 				<div class="m-8">
-						Configurations
+					Configurations
 				</div>
 
 				<div class="flex flex-row">
@@ -39,52 +45,79 @@ const updateConfig = (key, value) => {
 						<div class="form-control w-52">
 							<label class="cursor-pointer label">
 								<span class="label-text">Auto Select first Page</span> 
-								<input type="checkbox" class="toggle toggle-primary" :checked="config.autoSelectFirstPage" @click="updateConfig('autoSelectFirstPage', !config.autoSelectFirstPage)" />
+								<input
+									type="checkbox"
+									class="toggle toggle-primary"
+									:checked="config.autoSelectFirstPage"
+									@click="updateConfig('autoSelectFirstPage', !config.autoSelectFirstPage)"
+								>
 							</label>
 						</div>
 						<div class="form-control w-52">
 							<label class="cursor-pointer label">
 								<span class="label-text">Remember me</span> 
-								<input type="checkbox" class="toggle toggle-secondary" checked />
+								<input
+									type="checkbox"
+									class="toggle toggle-secondary"
+									checked
+								>
 							</label>
 						</div>
 						<div class="form-control w-52">
 							<label class="cursor-pointer label">
 								<span class="label-text">Remember me</span> 
-								<input type="checkbox" class="toggle toggle-accent" checked />
+								<input
+									type="checkbox"
+									class="toggle toggle-accent"
+									checked
+								>
 							</label>
 						</div>
 					</div>
 
-					<div class="divider divider-horizontal"></div>
+					<div class="divider divider-horizontal" />
 
 					<div class="flex flex-col">
 						<div class="form-control w-52">
 							<label class="cursor-pointer label">
 								<span class="label-text">Remember me</span> 
-								<input type="checkbox" class="toggle toggle-primary" checked />
+								<input
+									type="checkbox"
+									class="toggle toggle-primary"
+									checked
+								>
 							</label>
 						</div>
 						<div class="form-control w-52">
 							<label class="cursor-pointer label">
 								<span class="label-text">Remember me</span> 
-								<input type="checkbox" class="toggle toggle-secondary" checked />
+								<input
+									type="checkbox"
+									class="toggle toggle-secondary"
+									checked
+								>
 							</label>
 						</div>
 						<div class="form-control w-52">
 							<label class="cursor-pointer label">
 								<span class="label-text">Remember me</span> 
-								<input type="checkbox" class="toggle toggle-accent" checked />
+								<input
+									type="checkbox"
+									class="toggle toggle-accent"
+									checked
+								>
 							</label>
 						</div>
 					</div>
 				</div>
 
 				<div class="m-8">
-						<button
-							class="modal-default-button"
-							@click="$emit('close')"
-						>OK</button>
+					<button
+						class="modal-default-button"
+						@click="$emit('close')"
+					>
+						OK
+					</button>
 				</div>
 			</div>
 		</div>

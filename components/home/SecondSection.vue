@@ -2,22 +2,31 @@
 	<div class="flex flex-col justify-start align-start w-full py-10">
 		<div class="flex flex-col justify-center align-center w-[50%] mx-auto my-[5vh]">
 			<div class="flex flex-col justify-center mx-auto">
-				<h1 class="text-4xl font-bold text-white">{{ header_title }}</h1>
+				<h1 class="text-4xl font-bold text-white">
+					{{ header_title }}
+				</h1>
 			</div>
 			<div class="flex flex-col justify-center my-2 mx-auto">
-				<p class="text-base text-white">{{ header_description }}</p>
+				<p class="text-base text-white">
+					{{ header_description }}
+				</p>
 			</div>
 		</div>
 
 		<div class="grid grid-cols-1 grid-rows-3 w-[80%] mx-auto mt-[5vh]">
-
 			<div class="row-span-1 row-start-1 h-[100%]">
 				<div class="flex flex-row justify-around mx-auto">
 					<div class="flex justify-center items-center w-[100%]">
-						<TextBlockComponent :title="infos[0].title" :description="infos[0].description" />
+						<TextBlockComponent
+							:title="infos[0].title"
+							:description="infos[0].description"
+						/>
 					</div>
 					<div class="flex justify-center w-[100%]">
-						<ImageComponent key="images[0]" :image_url="images[0]" />
+						<ImageComponent
+							key="images[0]"
+							:image-url="images[0]"
+						/>
 					</div>
 				</div>
 			</div>
@@ -25,10 +34,16 @@
 			<div class="row-span-1 row-start-2">
 				<div class="flex flex-row justify-between mx-auto">
 					<div class="flex justify-center w-[100%]">
-						<ImageComponent key="images[1]" :image_url="images[1]" />
+						<ImageComponent
+							key="images[1]"
+							:image-url="images[1]"
+						/>
 					</div>
 					<div class="flex justify-center items-center w-[100%]">
-						<TextBlockComponent :title="infos[1].title" :description="infos[1].description" />
+						<TextBlockComponent
+							:title="infos[1].title"
+							:description="infos[1].description"
+						/>
 					</div>
 				</div>
 			</div>
@@ -36,10 +51,16 @@
 			<div class="row-span-1 row-start-3">
 				<div class="flex flex-row justify-between mx-auto">
 					<div class="flex justify-center items-center w-[100%]">
-						<TextBlockComponent :title="infos[2].title" :description="infos[2].description" />
+						<TextBlockComponent
+							:title="infos[2].title"
+							:description="infos[2].description"
+						/>
 					</div>
 					<div class="flex justify-center w-[100%]">
-						<ImageComponent key="images[2]" :image_url="images[2]" />
+						<ImageComponent
+							key="images[2]"
+							:image-url="images[2]"
+						/>
 					</div>
 				</div>
 			</div>
@@ -47,12 +68,15 @@
 
 		<div class="flex flex-col justify-center align-center w-[50%] mx-auto my-36">
 			<div class="flex flex-col justify-center my-2 mx-auto">
-				<h1 class="text-4xl font-bold text-white">{{ footer_title }}</h1>
+				<h1 class="text-4xl font-bold text-white">
+					{{ footer_title }}
+				</h1>
 			</div>
 			<div class="flex flex-col justify-center my-2 mx-auto">
-				<p class="text-base text-white">{{ footer_description }}</p>
+				<p class="text-base text-white">
+					{{ footer_description }}
+				</p>
 			</div>
-			<!-- add a nuxtlink to app page -->
 			<div class="flex flex-col justify-center my-3 mx-auto">
 				<nuxt-link to="/app">
 					<button class="bg-white text-black font-bold py-2 px-4 rounded-full">

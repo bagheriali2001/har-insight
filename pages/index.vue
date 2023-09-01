@@ -1,9 +1,9 @@
 <template>
-    <div style="background: #0177B6;">
-        <first-section />
-        <second-section />
-        <FooterComponent />
-    </div>
+	<div style="background: #0177B6;">
+		<first-section />
+		<second-section />
+		<FooterComponent />
+	</div>
 </template>
 
 <script setup>

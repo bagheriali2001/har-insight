@@ -1,18 +1,29 @@
 <template>
-    <div class="flex flex-col justify-center w-[100%] h-[100vh]" style="background: #efb529;">
-        <div class="container m-auto">
-            <div class="content">
-                <div class="content__container w-[100%]">
-                    <ul class="content__container__list">
-                        <li class="content__container__list__item">Insight</li>
-                        <li class="content__container__list__item">Inspect</li>
-                        <li class="content__container__list__item">Analyze</li>
-                        <li class="content__container__list__item">Visualize</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div
+		class="flex flex-col justify-center w-[100%] h-[100vh]"
+		style="background: #efb529;"
+	>
+		<div class="container m-auto">
+			<div class="content">
+				<div class="content__container w-[100%]">
+					<ul class="content__container__list">
+						<li class="content__container__list__item">
+							Insight
+						</li>
+						<li class="content__container__list__item">
+							Inspect
+						</li>
+						<li class="content__container__list__item">
+							Analyze
+						</li>
+						<li class="content__container__list__item">
+							Visualize
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <style scoped>
