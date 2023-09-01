@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+
+  har-insight:
+    image: har-insight:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: har-insight
+    restart: always
+    networks:
+      - main_network
+
+networks:
+  main_network:
+    name: main_network

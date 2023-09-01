@@ -1,5 +1,5 @@
 <template>
-	<div class="relative w-full h-full overflow-x-auto justify-center items-center z-0">
+	<div class="scroll-container relative w-full h-full overflow-x-auto justify-center items-center z-0">
 		<div
 			class="line pl-5 border-t-2 border-solid border-green-600 mt-2"
 			:style="[{'width': `${items.filter(item => item.done).length * elemWidth}px`}]"
@@ -60,6 +60,9 @@ const { items, elemWidth } = defineProps({
 </script>
   
 <style scoped>
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
 .line {
     position: absolute;
     left: 0;

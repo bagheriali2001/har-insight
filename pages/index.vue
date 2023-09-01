@@ -9,6 +9,6 @@
 <script setup>
 import FirstSection from '../components/home/FirstSection.vue';
 import SecondSection from '../components/home/SecondSection.vue';
-import FooterComponent from '../components/FooterComponent.vue';
+import FooterComponent from '../components/home/FooterComponent.vue';
 
 </script>

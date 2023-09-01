@@ -16,8 +16,8 @@
 				</p>
 			</div>
 
-			<div class="flex flex-col">
-				<p class="text-lg font-semibold mx-3">
+			<div class="flex flex-col w-8/12">
+				<p class="text-lg font-semibold mx-3 truncate">
 					Value: <span class="text-sm font-normal"> {{ data.value }}</span>
 				</p>
 				<p class="text-lg font-semibold mx-3">

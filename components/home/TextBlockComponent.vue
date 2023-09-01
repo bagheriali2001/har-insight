@@ -1,6 +1,6 @@
 <template>
 	<div
-		class="flex flex-col justify-center rounded-box w-[100%] h-[50%] px-[10%] py-[5%] m-[5%] max-w-[40vw]"
+		class="flex flex-col justify-center rounded-box w-[100%] h-[60%] px-[10%] py-[5%] m-[5%] max-w-[40vw]"
 		style="background: #e5c362;"
 	>
 		<div class="flex flex-col justify-center my-1 mx-auto">

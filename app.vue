@@ -14,7 +14,7 @@
 						class="drawer-button fixed top-0 left-0 m-4 w-0 h-0"
 					><img
 						for="my-drawer"
-						src="../icons/list.svg"
+						src="/icons/list.svg"
 						alt="logo"
 						class="w-[30px] fixed top-0 left-0 m-4"
 					></label>

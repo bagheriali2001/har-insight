@@ -1,4 +1,5 @@
 <template>
+	<!-- TODO: Add overall results, such as count and ... -->
 	<div>
 		<Teleport to="body">
 			<LoadFileModal
