@@ -37,8 +37,8 @@
 				</div>
 				<div class="card flex flex-col w-[80%] mt-4 h-80 border-2 rounded-lg border-solid bg-white shadow-xl p-4">
 					<p
-						v-for="(job, index) in item.jobs"
-						:key="index"
+						v-for="(job, JIndex) in item.jobs"
+						:key="JIndex"
 						class="text-gray text-sm mb-1.5 text-black"
 					>
 						{{ job.done? '✅' : '❌' }} {{ job.info }}
