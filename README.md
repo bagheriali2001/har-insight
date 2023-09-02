@@ -61,3 +61,11 @@ yarn preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+```javascript
+console.log("test")
+```
+
+<!-- #F1C54F primary -->
+
+<!-- #083763 secondary -->
