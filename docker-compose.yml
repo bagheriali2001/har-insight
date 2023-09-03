@@ -14,3 +14,4 @@ services:
 networks:
   main_network:
     name: main_network
+    external: true
