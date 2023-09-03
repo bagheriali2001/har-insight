@@ -1,71 +1,42 @@
-# Nuxt 3 Minimal Starter
+<center>
+<h1>
+HAR Insight
+</h1>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/bagheriali2001/har-insight)](https://github.com/bagheriali2001/har-insight/releases/latest)
 
-## Setup
+![Nuxtjs](https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82)
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
+![Buy me a coffee](https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)
 
-Make sure to install the dependencies:
+</center>
 
-```bash
-# npm
-npm install
+## Introduction
 
-# pnpm
-pnpm install
+ [HAR](https://en.wikipedia.org/wiki/HAR_(file_format)) file formats are being used to analyze the performance of a web page, and find source of the bugs.
 
-# yarn
-yarn install
-```
+## HAR File Format
 
-## Development Server
+The HAR file format is a JSON file that contains information about the different resources that are loaded when a web page is loaded. The HAR file format is used by most of the web browsers to store information about the web pages that are loaded.
 
-Start the development server on `http://localhost:3000`:
+## Roadmap
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-```javascript
-console.log("test")
-```
-
-<!-- #F1C54F primary -->
-
-<!-- #083763 secondary -->
+- [x] Phase 1 (The MVP 🤷‍♂️)
+  - [x] Visualizing the HAR file
+- [ ] Phase 2 (Unique Features 🤩)
+  - [ ] Adding better content viewing option
+  - [ ] Search functionality
+  - [ ] Documentation for Search Syntax
+  - [ ] Ability to store your configuration preferences after page reload
+- [ ] Phase 3 (More Features And Privacy 🤫)
+  - [ ] Adding configuration options (Columns in request table, Sort options, Request type filtering, etc...)
+  - [ ] Implementing Remove secrets functionality
+  - [ ] Adding download option
+- [ ] Phase 4 (The Real Deal 🤯)
+  - [ ] Implementing back-end for the project
+  - [ ] Ability to store you view configuration on the Back-end
+  - [ ] Implementing uploading and sharing of you HAR files
+- [ ] Phase 5 (Probably abandoned by now ☠️)
+  - [ ] Reworking the Landing page
+  - [ ] Reworking and improving design of the project
+  - [ ] Timeline view
