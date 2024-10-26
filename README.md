@@ -40,3 +40,4 @@ The HAR file format is a JSON file that contains information about the different
   - [ ] Reworking the Landing page
   - [ ] Reworking and improving design of the project
   - [ ] Timeline view
+ 
